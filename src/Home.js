@@ -3,11 +3,14 @@ import MostSold from "./MostSold";
 import cafecounter from "./pexels-photo-12689350.jpeg"
 const Home = () => {
     return <main>
-      <section id="intro">
+      <div>
+        
+      </div>
+      <section id="intro" className="content">
         <h1>Tervetuloa Kahvila KahviKulmaan!</h1>
         <p>Kahvilamme tarjoaa laadukasta kahvia ja herkullisia leivonnaisia.</p>
       </section>
-      <section id="products">
+      <section id="products" className="content">
         <h2>Tuotteemme</h2>
         <div className="responsive-image-text-grid">
           <div className="image_container">

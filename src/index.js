@@ -2,7 +2,6 @@ import ReactDOM from "react-dom/client";
 import { Helmet } from "react-helmet";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import PageTitle from "./PageTitle";
 import Home from "./Home";
 import Products from "./Products";
 import Contact from "./Contact";
