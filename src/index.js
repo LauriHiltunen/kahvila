@@ -17,21 +17,24 @@ export default function App() {
           <Route index element={
           <> 
             <Helmet>
-              <title>Kahvila | KahviKulma</title>
+              <title>KahviKulma | Kahvila</title>
+              <meta name="description" content="Kahvila KahviKulma tarjoaa laadukasta kahvia sekä herkullisia leivonnaisia."/>
             </Helmet>
             <Home/> 
           </>} />
           <Route path="tuotteet" element={
           <>
             <Helmet>
-              <title>KahviKulma | Tuotteet</title>
+              <title>Kahvila | Tuotteet</title>
+              <meta name="description" content="Selaa herkullisia tuotteitamme. Tuotteet ostetaan kahvilastamme."/>
             </Helmet>
             <Products/> 
           </>} />
           <Route path="yhteystiedot" element={
           <>
             <Helmet>
-              <title>KahviKulma | Yhteystiedot</title>
+              <title>Kahvila | Yhteystiedot</title>
+              <meta name="description" content="Fredrikinkatu 32, 00120 Helsinki. Puh 1234567890. Tänään avoinna 8-16."/>
             </Helmet>
             <Contact/> 
           </>} />
