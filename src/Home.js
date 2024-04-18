@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import MostSold from "./MostSold";
 import cafecounter from "./pexels-photo-12689350.jpeg"
+import cafeImg1 from "./craiyon_134620_brown_and_beige_empty_boring_restaurant_interier.png";
+import cafeImg2 from "./craiyon_134531_modern_cafe.png";
+
+
 const Home = () => {
+    console.log("RENDERED HOME");
     return <main>
-      <div>
-        
-      </div>
       <section id="intro" className="content">
+        <div className="fling-minislide">
+          <img alt="ruokailutila" src={cafeImg1}></img>
+          <img alt="kahvio" src={cafeImg2}></img>
+        </div>
         <h1>Tervetuloa Kahvila KahviKulmaan!</h1>
         <p>Kahvilamme tarjoaa laadukasta kahvia ja herkullisia leivonnaisia.</p>
       </section>
