@@ -6,13 +6,16 @@ const Layout = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Etusivu</Link>
           </li>
           <li>
-            <Link to="/tuotteet">Products</Link>
+            <Link to="/tuotteet">Tuotteet</Link>
           </li>
           <li>
-            <Link to="/yhteystiedot">Contact</Link>
+            <Link to="/tietoa">Meistä</Link>
+          </li>
+          <li>
+            <Link to="/yhteystiedot">Yhteystiedot</Link>
           </li>
         </ul>
       </nav>
