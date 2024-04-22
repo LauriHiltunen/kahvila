@@ -34,6 +34,10 @@ export default function App() {
             <Helmet>
               <title>Kahvila | Yhteystiedot</title>
               <meta name="description" content="Fredrikinkatu 32, 00120 Helsinki. Puh 1234567890. Tänään avoinna 8-16."/>
+              {/* <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/> */}
+
             </Helmet>
             <Contact/> 
           </>} />

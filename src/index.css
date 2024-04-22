@@ -53,6 +53,10 @@ nav ul li a {
 .fling-minislide img:nth-child(2){animation-delay:0s;}
 .fling-minislide img:nth-child(1){animation-delay:7.5s;}
 
+.leaflet-container {
+  width:100%;
+  height: 300px;
+}
 .responsive-image-text-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -119,6 +123,27 @@ footer {
   font-size: 0.8em;
 }
 
+#drinks {
+  text-align: left;
+}
+#drinks > h2 {
+  float:left;
+  width:min-content;
+  white-space:unset;
+}
+.button_container {
+  position: absolute;
+  left:-20px;
+  display: grid;
+  float:left;
+  height:28px;
+  margin: 19.92px 0 19.92px;
+  width:100%;
+  justify-items: right;
+}
+.clear {
+  clear: both;
+}
 
 /* Products */
 
@@ -132,10 +157,11 @@ footer {
   display:grid;
   grid-template-columns: 1fr 1fr;
   padding:6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .left > h3  {
   margin: 0 10px 0 0;
 }
 .right > img {
-  height:150px;
+  width:100px;
 }
