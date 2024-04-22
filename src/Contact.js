@@ -53,8 +53,8 @@ const Contact = () => {
         <p>puh: 0451234567</p>
         <p>contact@kahvikulma.fi</p>
       </div>
-      <div>
-        <form id='contact-form' action='' method='post'>
+      
+        <form className='simple-form' action='' method='post'>
           <label>
             <span>Sähköposti</span>
             <input type='email' name='email' placeholder='Sähköposti' required/>
@@ -67,23 +67,24 @@ const Contact = () => {
             <button>Lähetä</button>
           </div>
         </form>
-      </div>
+      
     </div>
   </section>
   <section id='feedback' className='content'>
   <h2>Palaute</h2>
 
-  <form id="feedback-form" action="" method="post">
+  <form className='simple-form' action="" method="post">
     <label>
-      <span>Sähköposti</span>
-      <input type='email' name='email' placeholder='Sähköposti' required/>
+      <span>Nimi:</span>
+      <input type='text' name='name' placeholder='Nimi' required/>
     </label>
     <label>
       <span>Viesti:</span>
       <textarea placeholder="viesti" name='message' required/>
     </label>
-    <div class="rate">
-      <input type="radio" id="star5" name="rate" value="5" />
+    <div className='form-buttons'>
+      <div class="rate">
+      <input type="radio" id="star5" name="rate" value="5" checked/>
       <label for="star5" title="text"></label>
       <input type="radio" id="star4" name="rate" value="4" />
       <label for="star4" title="text"></label>
@@ -93,6 +94,11 @@ const Contact = () => {
       <label for="star2" title="text"></label>
       <input type="radio" id="star1" name="rate" value="1" />
       <label for="star1" title="text"></label>
+    </div>
+    </div>
+    
+    <div className='form-buttons'>
+      <button>Lähetä</button>
     </div>
   </form>
   <ListFeedbacks/>

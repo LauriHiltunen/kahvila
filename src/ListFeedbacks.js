@@ -1,10 +1,22 @@
+import {useState,useEffect, useDebugValue} from "react"
+const ListFeedbacks = () => {
+  var [feedbacks,SetFeedbacks] = useState([]);
 
-const Contact = () => {
-  
+  useEffect(() => {
+    SetFeedbacks([{name:"pertti",message:"Kahvi ei maistunut",stars:<><span className="star checked"></span><span className="star checked"></span><span className="star checked"></span></>},{name:"pertti",message:"Kahvi ei maistunut",stars:<><span className="star checked"></span><span className="star checked"></span><span className="star checked"></span></>},{name:"pertti",message:"Kahvi ei maistunut",stars:<><span className="star checked"></span><span className="star checked"></span><span className="star checked"></span></>},{name:"pertti",message:"Kahvi ei maistunut",stars:<><span className="star checked"></span><span className="star checked"></span><span className="star checked"></span></>},{name:"pertti",message:"Kahvi ei maistunut",stars:<><span className="star checked"></span><span className="star checked"></span><span className="star checked"></span></>}])
+  }, [])
+
+
   return <section id="feedbacks">
-    <h2>Palautteet </h2>
-    
+    {feedbacks.length > 0 && feedbacks.map(feedback => (
+    <div className="feedback">
+        <h3>{feedback.name}</h3>
+        <textarea disabled>{feedback.message}</textarea>
+        <div>{feedback.stars}</div>
+        
+    </div>
+    ))}    
   </section>
   };
   
-  export default Contact;
+  export default ListFeedbacks;
