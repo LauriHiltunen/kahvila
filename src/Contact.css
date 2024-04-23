@@ -1,3 +1,15 @@
+/* Avoinna osio */
+
+.opentime_days {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    /* width:100%; */
+}
+.opentime_day {
+    
+}
+
 /* Yhteydenotto osio */
 .grid-box {
     display:grid;

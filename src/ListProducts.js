@@ -45,8 +45,8 @@ const Products = (props) => {
     
   }
   return <div className="products">
-    {products.map(element => (
-        <div className="product">
+    {products.map((element,index) => (
+        <div key={index} className="product">
             <div className="left">
                 <h3>{element.name}</h3>
                 <p>{element.price} €</p>

@@ -1,9 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
-
+import {useState,useEffect} from "react"
+import Loading from "./Loading"
 const Layout = () => {
-  return (
-    <>
-      <nav>
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {setInterval(() => {setLoading(false)},1000)},[])
+
+  return <>
+    {loading ? <Loading/> :
+      <><nav>
         <ul>
           <li>
             <Link to="/">Etusivu</Link>
@@ -24,9 +28,9 @@ const Layout = () => {
 
       <footer>
         <p>&copy; 2024 Kahvila KahviKulma</p>
-      </footer>
+      </footer></>}
     </>
-  )
+  
 };
 
 export default Layout;

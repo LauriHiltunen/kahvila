@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-import MostSold from "./MostSold";
+import { Link } from "react-router-dom"
+import MostSold from "./MostSold"
 import cafecounter from "./pexels-photo-12689350.jpeg"
-import cafeImg1 from "./craiyon_134620_brown_and_beige_empty_boring_restaurant_interier.png";
-import cafeImg2 from "./craiyon_134531_modern_cafe.png";
-
+import cafeImg1 from "./craiyon_134620_brown_and_beige_empty_boring_restaurant_interier.png"
+import cafeImg2 from "./craiyon_134531_modern_cafe.png"
 
 const Home = () => {
-    console.log("RENDERED HOME");
     return <main>
       <section id="intro" className="content">
         <div className="fling-minislide">
